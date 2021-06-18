@@ -37,7 +37,9 @@ body {
 }
 
 .card > a {
-
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--h-color);
+  text-decoration-line: none;
 }
 
 .card:nth-child(1) {
@@ -50,4 +52,14 @@ body {
 
 .card:nth-child(3) {
   background-color: var(--bg-3-color);
+}
+
+.card:nth-child(1) > a {
+  color: var(--bg-1-color);
+}
+.card:nth-child(2) > a {
+  color: var(--bg-2-color);
+}
+.card:nth-child(3) > a {
+  color: var(--bg-3-color);
 }
