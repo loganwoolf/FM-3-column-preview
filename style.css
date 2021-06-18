@@ -11,11 +11,12 @@
   --h-color: hsl(0, 0%, 95%);
 }
 
-body {
+.grid-container {
   margin: 5px;
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
+  min-width: 310px;
 }
 
 .card {
@@ -73,8 +74,20 @@ body {
   color: var(--bg-3-color);
 }
 
+.attribution {
+  font-family: sans-serif;
+  font-size: 10px;
+  margin: 2em 0;
+  padding: 2em 0;
+  text-align: center;
+}
+.attribution > a {
+  font-family: monospace;
+  font-size: 9px;
+}
+
 @media only screen and (min-width: 900px){
-  body {
+  .grid-container {
     grid-template-columns: auto auto auto;
     justify-content: center;
   }
@@ -103,15 +116,3 @@ body {
   }
 }
 
-.attribution {
-  font-family: sans-serif;
-  font-size: 10px;
-  margin: 2em 0;
-  padding: 2em 0;
-  text-align: center;
-  background-color: #DDD;
-}
-.attribution > a {
-  font-family: monospace;
-  font-size: 9px;
-}
