@@ -43,6 +43,7 @@ body {
   text-decoration-line: none;
   display: inline-block;
   padding: 1em 2.5em;
+  border: 3px solid var(--h-color);
   border-radius: 2em;
 }
 
@@ -70,4 +71,34 @@ body {
 
 .card:nth-child(3) > a {
   color: var(--bg-3-color);
+}
+
+@media only screen and (min-width: 900px){
+  body {
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+  
+  .card {
+    max-width: 28ch;
+    padding: 80px 60px;
+  }
+    
+  .card > p {
+    padding-bottom: 4em;
+  }
+  
+  .card:nth-child(1) {
+    border-radius: 10px 0 0 10px;
+  }
+  
+  
+  .card:nth-child(3) {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card > a:hover {
+    background-color: inherit;
+    color: var(--h-color);
+  }
 }
