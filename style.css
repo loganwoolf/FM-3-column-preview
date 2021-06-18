@@ -10,3 +10,18 @@
   --p-color: hsla(0, 0%, 100%, 0.75);
   --h-color: hsl(0, 0%, 95%);
 }
+
+body {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.card {
+  max-width: 25ch;
+}
+.card:nth-child(1) {background-color: var(--bg-1-color);}
+
+.card:nth-child(2) {background-color: var(--bg-2-color);}
+
+.card:nth-child(3) {background-color: var(--bg-3-color);}
