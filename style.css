@@ -10,10 +10,9 @@
   --p-color: hsla(0, 0%, 100%, 0.75);
   --h-color: hsl(0, 0%, 95%);
 }
-html {
-}
 
 body {
+  margin: 5px;
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
@@ -21,6 +20,7 @@ body {
 
 .card {
   max-width: 30ch;
+  padding: 50px;
 }
 
 .card > h2 {
@@ -34,16 +34,21 @@ body {
   color: var(--p-color);
   font-family: 'Lexend Deca', sans-serif;
   line-height: 1.5;
+  padding-bottom: 0.75em;
 }
 
 .card > a {
   font-family: 'Lexend Deca', sans-serif;
   background-color: var(--h-color);
   text-decoration-line: none;
+  display: inline-block;
+  padding: 1em 2.5em;
+  border-radius: 2em;
 }
 
 .card:nth-child(1) {
   background-color: var(--bg-1-color);
+  border-radius: 10px 10px 0 0;
 }
 
 .card:nth-child(2) {
@@ -52,14 +57,17 @@ body {
 
 .card:nth-child(3) {
   background-color: var(--bg-3-color);
+  border-radius: 0 0 10px 10px;
 }
 
 .card:nth-child(1) > a {
   color: var(--bg-1-color);
 }
+
 .card:nth-child(2) > a {
   color: var(--bg-2-color);
 }
+
 .card:nth-child(3) > a {
   color: var(--bg-3-color);
 }
